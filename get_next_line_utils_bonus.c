@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ntesfu <ntesfu@student.42abudhabi.ae>      +#+  +:+       +#+        */
+/*   By: ntesfu <ntesfu@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 04:17:37 by ntesfu            #+#    #+#             */
-/*   Updated: 2022/02/11 06:40:53 by ntesfu           ###   ########.fr       */
+/*   Updated: 2022/02/11 19:05:59 by ntesfu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t	ft_strlen(const char *s)
 {
