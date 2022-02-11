@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ntesfu <ntesfu@student.42abudhabi.ae>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 04:17:21 by ntesfu            #+#    #+#             */
-/*   Updated: 2022/02/11 04:17:27 by ntesfu           ###   ########.fr       */
+/*   Updated: 2022/02/11 06:40:01 by ntesfu           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_indexof(char *str, char c)
 	return (-1);
 }
 
-int	get_line_if_read(char buf[], char **res)
+int	get_line_if_read(char *buf, char **res)
 {
 	int		n_ind;
 	char	*tmp;
@@ -91,6 +91,8 @@ char	*get_next_line(int fd)
 	char		*res;
 
 	res = NULL;
+	if (fd > 100 || fd < 0)
+		return (res);
 	if (get_line_if_read(s[fd], &res) == 1)
 		return (res);
 	buf = (char *)malloc(sizeof (char) * (BUFFER_SIZE + 1));
